@@ -7,3 +7,5 @@ end
  resources :posts, only: [:index, :show, :new, :create, :edit, :update]
  
   root 'posts#index'
+  
+end 
