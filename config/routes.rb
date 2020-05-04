@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resources :authors, only: [:show] do
+  resources :artists, only: [:show] do
 
-    resources :posts, only: [:index, :show]
+    resources :songs, only: [:index, :show]
 end 
 
- resources :posts, only: [:index, :show, :new, :create, :edit, :update]
+ resources :songs, only: [:index, :show, :new, :create, :edit, :update]
  
   root 'posts#index'
   
